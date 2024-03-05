@@ -5,7 +5,6 @@ import yaml
 import math
 import time
 import pygame
-from pygame import mixer
 import pandas as pd
 from datetime import datetime, timedelta
 import subprocess  # For running data_saving.py as a subprocess
@@ -19,7 +18,6 @@ data_yaml_path = "data.yaml"
 
 # Load the YOLOv5 model
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
-
 
 # Load data.yaml file
 with open(data_yaml_path, 'r') as file:
@@ -43,6 +41,7 @@ pygame.init()
 # Set the path to your alarm sound file
 alarm_sound_path = "/MV27TES-alarm.mp3"
 alarm_sound = pygame.mixer.Sound(alarm_sound_path)
+time.sleep(10)
 
 # Flag to keep track of 'no mask on' state
 previous_no_mask_state = False
