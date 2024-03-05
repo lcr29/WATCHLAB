@@ -36,12 +36,11 @@ count_people_loop = 0
 minute_start_time = time.time()
 minute_count = 0
 
+# Initialize pygame
 pygame.init()
 
-# Define the path to your alarm sound file
-alarm_sound_path = "MV27TES-alarm.wav"
-
-# Load the alarm sound file
+# Set the path to your alarm sound file
+alarm_sound_path = "/MV27TES-alarm.wav"
 alarm_sound = pygame.mixer.Sound(alarm_sound_path)
 
 # Flag to keep track of 'no mask on' state
