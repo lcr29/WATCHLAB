@@ -11,8 +11,8 @@ import subprocess  # For running data_saving.py as a subprocess
 import torch
 
 # Load YOLOv8 model
-model_path = r"/best.pt"
-data_yaml_path = r"/data.yaml"
+model_path = "best.pt"
+data_yaml_path = "data.yaml"
 
 # Load YOLOv8 using ultralytics
 
@@ -40,7 +40,7 @@ minute_count = 0
 pygame.init()
 
 # Set the path to your alarm sound file
-alarm_sound_path = "/MV27TES-alarm.mp3"
+alarm_sound_path = "MV27TES-alarm.mp3"
 alarm_sound = pygame.mixer.Sound(alarm_sound_path)
 
 # Flag to keep track of 'no mask on' state
