@@ -41,7 +41,7 @@ pygame.init()
 
 # Load the alarm sound file
 try:
-    alarm_sound = pygame.Sound(alarm_sound_path)
+    alarm_sound = pygame.mixer.Sound(alarm_sound_path)
 except pygame.error as e:
     st.error(f"Error loading sound file: {str(e)}")
     
