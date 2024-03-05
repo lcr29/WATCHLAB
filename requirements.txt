@@ -5,4 +5,4 @@ PyYAML==6.0
 pygame
 pandas
 torch
-git+https://github.com/ultralytics/yolov5
+yolov5
