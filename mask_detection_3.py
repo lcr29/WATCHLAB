@@ -42,6 +42,7 @@ alarm_sound_path = "MV27TES-alarm.wav"
 # Initialize Pygame
 try:
     pygame.init()
+    pygame.mixer.init()  # Initialize the mixer module
 except pygame.error as e:
     st.error(f"Error initializing Pygame: {str(e)}")
     st.stop()
@@ -53,7 +54,6 @@ except pygame.error as e:
     st.error(f"Error loading sound file: {str(e)}")
     st.stop()
 
-    
 # Flag to keep track of 'no mask on' state
 previous_no_mask_state = False
 
