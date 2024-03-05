@@ -8,14 +8,17 @@ import pygame
 import pandas as pd
 from datetime import datetime, timedelta
 import subprocess  # For running data_saving.py as a subprocess
+import torch
 
 # Load YOLOv8 model
 model_path = r"/best.pt"
 data_yaml_path = r"/data.yaml"
 
 # Load YOLOv8 using ultralytics
-from ultralytics import YOLO
-model = YOLO(model_path)
+
+# Load the YOLOv5 model
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+
 
 # Load data.yaml file
 with open(data_yaml_path, 'r') as file:
