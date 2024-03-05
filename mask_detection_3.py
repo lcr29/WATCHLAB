@@ -39,9 +39,6 @@ minute_count = 0
 # Initialize Pygame
 pygame.init()
 
-# Initialize the mixer module
-pygame.mixer.init()
-
 # Load the alarm sound file
 try:
     alarm_sound = pygame.mixer.Sound(alarm_sound_path)
