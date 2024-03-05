@@ -36,7 +36,7 @@ minute_start_time = time.time()
 minute_count = 0
 
 # Initialize pygame
-pygame.mixer.init()
+pygame.init()
 
 # Set the path to your alarm sound file
 alarm_sound_path = "/MV27TES-alarm.mp3"
