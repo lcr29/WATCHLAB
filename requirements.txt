@@ -9,7 +9,7 @@ torchvision>=0.9.0
 # YOLOv5 specific dependencies
 gitpython>=3.1.30
 matplotlib>=3.3
-opencv-python>=4.1.1
+opencv-python-headless==4.5.5.62  # Updated to specify the headless version and exact working version
 Pillow>=9.4.0
 psutil
 requests>=2.23.0
@@ -19,4 +19,5 @@ tqdm>=4.64.0
 ultralytics>=8.0.232
 seaborn>=0.11.0
 setuptools>=65.5.1
+
 
