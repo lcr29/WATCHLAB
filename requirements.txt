@@ -1,8 +1,7 @@
-streamlit==1.26.0
-opencv-python-headless==4.7.0.72
-numpy==1.23.5
-PyYAML==6.0
-pygame
-pandas
-torch
-yolov5
+streamlit==1.10.0  # Adjust based on the latest compatible version
+opencv-python-headless==4.5.5.64  # Choose a version compatible with Python 3.11
+numpy==1.22.3  # NumPy should be selected for compatibility with other libraries and Python 3.11
+PyYAML==6.0  # Latest version known to be stable
+pygame==2.1.0  # Ensure this version works with Python 3.11
+pandas==1.4.1  # Select a version that's compatible with Python 3.11
+torch==1.11.0  # PyTorch version that supports Python 3.11; adjust as necessary
