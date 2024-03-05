@@ -9,7 +9,6 @@ import pandas as pd
 from datetime import datetime, timedelta
 import subprocess  # For running data_saving.py as a subprocess
 import torch
-import time
 
 # Load YOLOv8 model
 model_path = "best.pt"
@@ -37,7 +36,7 @@ minute_start_time = time.time()
 minute_count = 0
 
 # Initialize pygame
-pygame.init()
+pygame.mixer.init()
 
 # Set the path to your alarm sound file
 alarm_sound_path = "/MV27TES-alarm.mp3"
