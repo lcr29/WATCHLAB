@@ -9,6 +9,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 import subprocess  # For running data_saving.py as a subprocess
 import torch
+import os
 
 # Load YOLOv8 model
 model_path = "best.pt"
@@ -36,6 +37,7 @@ count_people_loop = 0
 minute_start_time = time.time()
 minute_count = 0
 
+os.environ['SDL_AUDIODRIVER'] = 'coreaudio'
 
 # Initialize Pygame
 pygame.init()
