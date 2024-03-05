@@ -36,11 +36,14 @@ count_people_loop = 0
 minute_start_time = time.time()
 minute_count = 0
 
-# Initialize pygame
+
+# Initialize Pygame
 pygame.init()
 
-# Set the path to your alarm sound file
-alarm_sound_path = "MV27TES-alarm.wav"
+# Initialize the mixer module
+pygame.mixer.init()
+
+# Load the alarm sound file
 try:
     alarm_sound = pygame.mixer.Sound(alarm_sound_path)
 except pygame.error as e:
