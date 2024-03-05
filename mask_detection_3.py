@@ -120,8 +120,9 @@ if selected_page == "System Information":
     )
 
 # Page 2: Webcam Stream
-if st.session_state.data_saving_process:
-    st.title("🔬 LABWATCH WEBCAM 😷")
+if 'data_saving_process' not in st.session_state:
+    st.session_state.data_saving_process = None
+
 
     # Access the webcam only when the button is pressed
     cap = cv2.VideoCapture(0)
